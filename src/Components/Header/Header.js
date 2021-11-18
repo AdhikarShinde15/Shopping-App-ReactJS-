@@ -13,14 +13,15 @@ const Header = () => {
                 <Navbar.Brand>
                     <Link to="/">Shopping Cart</Link>
                 </Navbar.Brand>
-                <Navbar.Text className="search">
+                <Navbar.Text className={styles.search}>
                     <FormControl style={{ width: 500 }}
                         placeholder="Search For Products"
                         className="m-auto"
                         onChange={(e) => productDispatch({
                             type: "FILTER_BY_SEARCH",
                             payload: e.target.value
-                        })}
+                        })
+                    }
                     >
                     </FormControl>
                 </Navbar.Text>

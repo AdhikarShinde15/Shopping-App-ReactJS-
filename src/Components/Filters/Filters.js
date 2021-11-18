@@ -1,4 +1,3 @@
-import { useState } from "react"
 import { Button, Form } from "react-bootstrap"
 import { CartState } from "../../Context/Context"
 import styles from "../Filters/Filters.module.scss"
